@@ -1,35 +1,23 @@
-# Collateral Scoring
-The data and code for the paper "A Dual-Branch Hybrid Network with Bilateral-Difference Awareness for Collateral Scoring on CT Angiography of Acute Ischemic Stroke Patients" submitted to Physics in Medicine & Biology 2024. <br />
+# mRS prediction
+The data and code for the paper "Vision-Language Model with Siamese Bilateral Difference Network for Acute Ischemic Stroke Outcome Prediction" submitted to CVPR2025. <br />
 
 ## Requirements
-CUDA 11.7<br />
-Python 3.9.19<br /> 
-Pytorch 2.2.1<br />
-Torchvision 0.17.1<br />
-SimpleITK 2.4.0 <br />
-einops 0.8.0 <br />
-matplotlib 3.9.2 <br />
-timm 1.0.9 <br />
-scikit_learn 1.5.2 <br />
-opencv_python 4.10.0.84 <br />
-pandas 2.2.3 <br />
-numpy 2.1.1 <br />
+imbalanced_learn 0.12.0<br />
+imblearn 0.0<br />
+monai 1.3.0<br />
+numpy 2.1.3<br />
+pandas 2.2.3<br />
+scikit_learn 1.4.1.post1<br />
+SimpleITK 2.3.1<br />
+torch 2.2.1<br />
+transformers 4.44.2<br />
 
 ## Getting Started
 
 ### Installation
-#### Step1: Clone the Collateral repository
-To get started, first clone the Collateral repository and navigate to the project directory:
-
-```
-git clone https://github.com/09Echo/Collateral.git
-cd Collateral
-```
-
-#### Step2: Environment Setup
 Create and activate a new conda environment
 ```
-conda create -n collateral python=3.9.19
+conda create -n mrs python=3.9.18
 conda activate collateral
 ```
 
@@ -38,7 +26,7 @@ Install Dependencies
 pip install -r requirements.txt
 ```
 
-## Collateral Scoring on CT Angiography
+## mRS Prediction on CT Angiography
 ### Skull-stripping
   
 After converting the DICOM files to NIfTI format, perform skull stripping according to the instructions at https://github.com/WuChanada/StripSkullCT.  <br />
