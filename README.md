@@ -11,7 +11,7 @@ scikit_learn 1.4.1.post1<br />
 SimpleITK 2.3.1<br />
 torch 2.2.1<br />
 transformers 4.44.2<br />
-BioLinkBERT download link: https://huggingface.co/michiyasunaga/BioLinkBERT-base
+BioLinkBERT download link: https://huggingface.co/michiyasunaga/BioLinkBERT-base <br />
 LVM-Med download link: https://github.com/duyhominhnguyen/LVM-Med
 ## Getting Started
 
