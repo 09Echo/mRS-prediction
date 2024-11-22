@@ -33,23 +33,22 @@ After converting the DICOM files to NIfTI format, perform skull stripping accord
 
 ### Training  
 ```
-python train.py --save-path <Path> --num-classes <Classes>
+python train.py --save-path <Path>
 ```
 Parameter Description：  
 * --save-path <Path>: Model save path, please specify a valid directory
-* --num-classes <Classes>: Classification category, please specify a positive integer, such as 3
 
 ### Testing  
 ```
-python test.py --checkpoint-path <Path> --checkpoint-name <list> --num-classes <Classes> --k-fold <fold>
+python test.py --save-path <Path> --checkpoint-name <list> --num-classes <Classes>
 ```
 Parameter Description：  
-* --checkpoint-path <Path>: Directory for saving model checkpoints
+* --save-path <Path>: Directory for saving model checkpoints
 * --checkpoint-name <list>: Name of each folded test model, such as 5-fold cross-validation: ['fold0.pt', 'fold1.pt', 'fold2.pt', 'fold3.pt', 'fold4.pt']
 * --num-classes <Classes>: Classification category, please specify a positive integer, such as 3
 
 ### Reproduction details and codes
-During reproduction, for the CNN-based methods, Transformer-based methods, and Hybrid-CNN-Transformer-based methods. All of these methods can be found at [[Baseline]](./baseline).  <br />
+During reproduction, the CNN-based methods and Transformer-based methods are used. All of these methods can be found at [[Baseline]](./baseline).  <br />
 Note that for all compared methods, to perform fair comparisons, we used the same data split and five-fold cross-validation.  <br />
 
 
