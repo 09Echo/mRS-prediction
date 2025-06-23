@@ -1,5 +1,5 @@
 # mRS prediction
-The data and code for the paper "Vision-Language Model with Siamese Bilateral Difference Network for Acute Ischemic Stroke Outcome Prediction" submitted to Medical Image Analysis. <br />
+The data and code for the paper "Vision-Language Model with Siamese Bilateral Difference Network and Text-Guided Image Feature Enhancement for Acute Ischemic Stroke Outcome Prediction on CT Angiography" submitted to Medical Image Analysis. <br />
 
 ## Requirements
 imbalanced_learn 0.12.0<br />
