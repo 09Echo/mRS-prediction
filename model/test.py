@@ -87,7 +87,7 @@ def mrstest(args):
         prob_all.extend(outprob)
 
         cmk = metrics.confusion_matrix(t_y, p_y)
-        precision, recall, f1, _ = metrics.precision_recall_fscore_support(t_y_all, p_y_all, average='binary')
+        precision, recall, f1, _ = metrics.precision_recall_fscore_support(t_y, p_y, average='binary')
         ACC = metrics.accuracy_score(t_y, p_y)
         AUC = metrics.roc_auc_score(t_y, outprob)
         sens = calculate_sensitivity(cmk)
